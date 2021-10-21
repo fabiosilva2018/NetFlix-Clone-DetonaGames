@@ -1,0 +1,308 @@
+/* CELULAR RETRaTO */
+@media screen and (max-width:360px){
+    html{
+        font-size: 50%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .logo{
+        margin: auto;
+        width: auto;
+        height: 100%;
+        padding: 0;
+    }
+
+    .one,
+    .two,
+    .three{
+        background-color: white;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: .3s;
+    }
+
+    .menu-burguer{
+        width: 50px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /*width: 100vw;
+        height: 100vh;*/
+        background: linear-gradient(150deg, #07c972, #359d9e);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .menu-section.on nav{
+        display: block;
+        z-index: 1;
+    }
+
+    .menu-section.on .menu-burguer{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu-burguer .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-burguer .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-burguer .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    .menu-section.on nav ul li a{
+        transition-duration: .3s;
+        font-size: 5rem;
+        line-height: 15rem;
+        margin-right: 0;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3%;
+        height: 100px;
+        top: 45%;
+    }
+
+    .botao{
+        display: flex;
+        justify-content: left;
+        margin-top: 5px;
+        width: 280px;
+    }
+
+    .navigation{
+        max-width: 360px;
+        width: 80%;
+        height: 20px;
+        left: 10%;
+        top: 60%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .modal{
+        width: 80%;
+        background-color: rgb(70, 70, 70);
+    }
+
+    .video,
+    .video2,
+    .video3,
+    .video4,
+    .video5,
+    .video6,
+    .video7,
+    .video8,
+    .video9,
+    .video10,
+    .video11{
+        width: 100%;
+        height: 50%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
+}
+
+/* CELULAR PAISAGEM */
+@media screen and (min-width: 640px) and (max-width: 979px){
+    html{
+        font-size: 50%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three{
+        background-color: white;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: .3s;
+    }
+
+    .menu-burguer{
+        width: 50px;
+        height: 40px;
+        margin-right: 15px;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /*width: 100vw;
+        height: 100vh;*/
+        background: linear-gradient(150deg, #07c972, #359d9e);
+        display: flex;
+        /*align-items: center;*/
+        justify-content: center;
+    }
+
+    .menu-section.on nav{
+        display: block;
+    }
+
+    .menu-section.on .menu-burguer{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    .menu-section.on .menu-burguer .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-burguer .two{
+       opacity: 0;
+    }
+
+    .menu-section.on .menu-burguer .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    .menu-section.on nav ul{
+        display: block;
+        text-align: center;
+    }
+
+    .menu-section.on nav ul li a{
+        transition-duration: .3s;
+        font-size: 5rem;
+        line-height: 15rem;
+        margin-right: 0;
+    }
+
+    .navigation{
+        max-width: 640px;
+        width: 65%;
+        height: 20px;
+        left: 5%;
+        margin-top: 10px;
+        top: 140%;
+        display: flex;
+        justify-content: left;
+        margin: auto;
+    }
+
+
+    .bar{
+        width: 10%;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        height: 100px;
+        top: 75%;
+    }
+
+    .botao{
+        display: flex;
+        bottom: 180%;
+        margin-top: 5px;
+        width: 250px;
+    }
+
+    .video,
+    .video2,
+    .video3,
+    .video4,
+    .video5,
+    .video6,
+    .video7,
+    .video8,
+    .video9,
+    .video10,
+    .video11{
+        width: 90%;
+        height: 90%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+
+}
+
+    /* TABLET PAISAGEM 
+    @media screen and (max-width: 1024px){
+        .navigation{
+            max-width: 640px;
+            width: 90%;
+            height: 20px;
+            left: 2%;
+            margin-top: 10px;
+            top: 20%;
+            display: flex;
+            justify-content: left;
+            margin: auto;
+            border: 2px solid orangered;
+        }
+    
+        .bar{
+            width: 10%;
+        }
+    
+        .botoes{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            height: 100px;
+            top: 35%;
+        }
+    
+        .botao{
+            display: flex;
+            bottom: 200%;
+            margin-top: 5px;
+            width: 300px;
+        }
+
+}*/

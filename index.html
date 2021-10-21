@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- RESPONSIVIDADE -->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!-- OWL CSS - CAROUSEL-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE - DETONAGAMES</title>
+</head>
+<body translate="yes">
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <h2>DETONAGAMES</h2>
+            </div>
+
+            <div class="menu-section">
+
+                <!-- MENU HAMBURGUER -->
+                <div class="menu-burguer" onclick="MostrarOcultarDiv('content')">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <!-- <li><a href="#">Início</a></li>
+                        <li><a href="#">Categorias</a></li> -->
+                        <li><a target="_blank" href="https://github.com/fabiosilva2018">GitHub</a></li>
+                        <li><a href="#" onclick="Swal.fire({title: 'Fábio J. Silva', text: 'Fone 1: +55 82 99618 4125\n Fone 2: +55 82 99363 1262 \n\n Em agradecimento a Equipe de Professores da DIO\n Digital Innovation One', icon: '', confirmButtonText: 'OK'})">Contato</a></li>
+                        <!-- <li><a href="#" onclick="swal('Fábio J. Silva\n ');">Contato</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+
+                <div class="content" id="content">
+                    <div class="slides">
+                        <input type="radio" name="radio" id="slide1">
+                        <input type="radio" name="radio" id="slide2">
+                        <input type="radio" name="radio" id="slide3">
+                        <input type="radio" name="radio" id="slide4">
+                        <input type="radio" name="radio" id="slide5">
+
+                        <div class="slide s1">
+                            <img src="./img/image1.jpg" alt="sonic the hedgehog" checked>
+                        </div>
+                        <div class="slide">
+                            <img src="./img/image2.jpg" alt="super mario world">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/image3.jpg" alt="mega man x">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/image4.jpg" alt="castlevania">
+                        </div>
+                        <div class="slide">
+                            <img src="./img/image5.jpg" alt="resident evil 4">
+                        </div> 
+                    </div>
+
+                        <div class="botoes">
+                            <button role="button" class="botao" onclick="abrirVideoPrincipal(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo1('hide')">
+                                <i class="fas fa-play">&nbsp;&nbsp;ASSISTIR AGORA</i>                                                                  
+                            </button>
+                            <button role="button" class="botao" onclick="acao()">
+                                <i class="fas fa-info-circle">&nbsp;&nbsp;MAIS INFORMAÇÕES</i>                                      
+                            </button>
+                        </div>
+
+                        <div class="navigation" id="navigation">
+                            <label class="bar" for="slide1"></label>
+                            <label class="bar" for="slide2"></label>
+                            <label class="bar" for="slide3"></label>
+                            <label class="bar" for="slide4"></label>
+                            <label class="bar" for="slide5"></label>
+                        </div>
+
+                    <div class="modal" id="modal">
+                        <div class="cabecalho">
+                            <div><i class="fas fa-info-circle">&nbsp;&nbsp;SOBRE O SITE</i></div>
+                            <div onclick="fechar()" class="fechar">X</div>
+                        </div>
+                        <div class="texto">
+                            <p>As boas lembranças sempre estarão guardadas em nossos corações. Navegue no nosso site e curta a Nostalgia dos Games.
+                            Reviva e Detone tudo de bom que os Games Retrô nos oferecem.</p>
+                        </div>
+
+
+                    </div>
+
+                    <!-- MEGA MAN X -->
+                    <div class="video" id="video01">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharMegaManX(), toggleVideo1('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/VLAASFngT3M?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- TOP GEAR -->
+                    <div class="video2" id="video02">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharTopGear(), toggleVideo2('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/oSGkaCcUc_A?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- TOP SUNSTRIDERS -->
+                    <div class="video3" id="video03">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharSunsetRiders(), toggleVideo3('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/_ZKxxUWJZOs?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                    </div>
+
+                    <!-- DONKEY KONG -->
+                    <div class="video4" id="video04">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharSunsetRiders(), toggleVideo4('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/bXHDSA35_2k?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- SUPER MARIO WORLD -->
+                    <div class="video5" id="video05">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharSuperMario(), toggleVideo5('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/cfYg0-tQMOg?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                    </div>
+
+                    <!-- SONIC -->
+                    <div class="video6" id="video06">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharSonic(), toggleVideo6('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/J06663Njops?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- METAL SLUG -->
+                    <div class="video7" id="video07">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharMetalSLug(), toggleVideo7('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/FVFMQjuLXd4?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- CASTLEVANIA SOTN -->
+                    <div class="video8" id="video08">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharCastlevania(), toggleVideo8('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/Dl88mZ5FUEE?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- METAL GEAR SOLID -->
+                    <div class="video9" id="video09">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharMetalGear(), toggleVideo9('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/R4I0l4o65JQ?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- RESIDENT EVIL 4 -->
+                    <div class="video10" id="video10">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharResidentEvil4(), toggleVideo10('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/irZeLLM8PXA?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- VIDEO PRINCIPAL -->
+                    <div class="video11" id="video11">
+                        <div class="cabecalhovideo">
+                            <div><i class="fas fa-play">&nbsp;&nbsp;VIDEO GAME PLAYER</i></div>
+                            <div class="fecharvideo" onclick="fecharPrincipal(), toggleVideo11('hide')">X</div>
+                        </div>
+                        <iframe width="790" height="390" src="https://www.youtube.com/embed/JqQYDLcvkBc?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+
+        </div>
+
+    </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="Top Gear" onclick="abrirVideoTopGear(), inicioPagina(), toggleVideo1('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="Mega Man X" onclick="abrirVideo(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="SunsetRiders" onclick="abrirVideoSunsetRiders(), inicioPagina(), toggleVideo2('hide'), toggleVideo1('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="Donkey Kong" onclick="abrirVideoDonkeyKong(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo1('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="Super Mario" onclick="abrirVideoSuperMario(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo1('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="Sonic" onclick="abrirVideoSonic(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo1('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.png" alt="Metal SLug" onclick="abrirVideoMetalSLug(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo1('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="Castlevania Symphony of the Night" onclick="abrirVideoCastlevania(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo1('hide'), toggleVideo9('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="Metal Gear Solid" onclick="abrirVideoMetalGear(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo1('hide'), toggleVideo10('hide'), toggleVideo11('hide')">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="Resident Evil 4" onclick="abrirVideoResidentEvil4(), inicioPagina(), toggleVideo2('hide'), toggleVideo3('hide'), toggleVideo4('hide'), toggleVideo5('hide'), toggleVideo6('hide'), toggleVideo7('hide'), toggleVideo8('hide'), toggleVideo9('hide'), toggleVideo1('hide'), toggleVideo11('hide')">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/cbb290d5ac.js" crossorigin="anonymous"></script>
+
+    <!-- MENU HAMBURGUER -->
+    <script src="js/menu.js"></script>
+
+    <!-- OWL JS - CAROUSEL -->
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+    <!-- YOUTUBE -->
+    <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
+
+    <!-- SWEET ALERT -->
+    <script src="js/sweetalert.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
